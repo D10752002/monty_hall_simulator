@@ -15,6 +15,9 @@ Run the executable file as follows
 ```
 
 
-The code outputs the required probabilities of winning using each of the two strategies (staying or switching from the original choice)
+The code outputs the required probabilities of winning using each of the two strategies:
+- sticking with the initial choice (staying)
+- switching from the initial choice
 
-The code also outputs the theoretical probabilities expected in an ideal scenario (these probabilities can be achieved by considering infinite simulations)
+The code also outputs the theoretical probabilities expected in an ideal scenario\
+(these probabilities can be achieved by considering infinite simulations)
