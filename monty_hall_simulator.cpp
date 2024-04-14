@@ -55,6 +55,7 @@ int main(int argc, char* argv[]) {
         
         //reset the door behind which the prize is present back to 0
         doors[prize_door]=0;
+        doors[initial_contestant_choice]=1
         //randomly switch your choice
         int modified_contestant_choice=rand()%num_doors;
         while(doors[modified_contestant_choice]){
