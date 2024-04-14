@@ -23,6 +23,15 @@ int main(int argc, char* argv[]) {
         }
     }
     
+    if(num_doors<3){
+        cout<<"num_doors needs to be greater than 2";
+        return 1;
+    }
+    if(num_doors_opened_by_host>num_doors-2){
+        cout<<"num_doors_opened_by_host needs to be less than num_doors-1";
+        return 1;
+    }
+    
     srand(time(0)); 
     
     float total_win_stay=0;
@@ -55,7 +64,7 @@ int main(int argc, char* argv[]) {
         
         //reset the door behind which the prize is present back to 0
         doors[prize_door]=0;
-        doors[initial_contestant_choice]=1
+        doors[initial_contestant_choice]=1;
         //randomly switch your choice
         int modified_contestant_choice=rand()%num_doors;
         while(doors[modified_contestant_choice]){
